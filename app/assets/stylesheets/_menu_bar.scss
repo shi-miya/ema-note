@@ -1,13 +1,42 @@
 .menu-bar {
-  background-color: red;
+  color: white;
   width: 230px;
   height: 100vh;
-  padding: 10px;
-  float: left;
-  .user-box {
-    color: white;
-    display: flex;
-    
-  }
 
+  float: left;
+  &__top {
+    background-color: black;
+    height: 130px;
+    padding: 10px;
+    .user-box {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      a {
+        color: white;
+      }
+      
+    }
+      .user-name {
+        margin-left: 10px;
+      }
+    .new-note-block {
+      text-align: center;
+      padding-top: 15px;
+      font-size: 20px;
+      .new-note {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: yellowgreen;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    }
+  }
+  &__info {
+    background-color: orangered;
+    height: 100vh;
+    padding: 10px;    
+  }
 }

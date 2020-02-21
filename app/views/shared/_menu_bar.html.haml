@@ -1,7 +1,14 @@
 .menu-bar 
-  .user-box
-    .user-icon
-      = link_to "#" do
-        = icon("fas fa-user", class:"user-icon")
-    .user-name
-      shirokuma
+  .menu-bar__top
+    .user-box
+      .user-icon
+        = link_to "#" do
+          = icon("fas fa-user", id:"user-icon")
+      .user-name
+        shirokuma
+    .new-note-block
+      = link_to "create a new note", '#', class:'new-note'
+  %ul.menu-bar__info
+    %li Group note
+    %li Dust box
+
